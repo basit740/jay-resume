@@ -238,10 +238,7 @@ h4 {
 		overflow-x: hidden !important;
 		overflow-y: scroll !important;
 	}
-	/* section {
-		display: block;
-		text-align: center;
-	} */
+
 	.name {
 		width: 100%;
 	}
@@ -265,6 +262,35 @@ h4 {
 		margin-left: 5px;
 	}
 	.exp-date {
-		margin-right: 5px;
+		margin-right: 10px;
+	}
+
+	section {
+		display: block;
+	}
+	.licensing-content {
+		width: 100%;
+	}
+
+	.technical-content {
+		width: 100%;
+		margin-left: 5px;
+	}
+	.skill {
+		padding: 5px;
+		width: 100px;
+	}
+
+	.exp-content {
+		width: 100%;
+		margin-left: 5px;
+	}
+
+	.proj-content {
+		width: 100%;
+		margin-left: 5px;
+	}
+	.proj-date h3 {
+		display: flex;
 	}
 }
