@@ -1,11 +1,13 @@
 body {
 	background: rgb(165, 165, 165);
+	margin: 0;
+	padding: 0;
 }
 a {
 	color: #990003;
 }
 .content {
-	width: 950px;
+	max-width: 950px;
 	margin: 0 auto;
 	margin-top: 80px;
 	border-top: 10px solid black;
@@ -63,7 +65,7 @@ a {
 
 /* Extra Details CSS */
 
-.licensing {
+section {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	border-bottom: 1px solid #ccc;
@@ -72,6 +74,7 @@ a {
 
 	justify-content: space-between;
 }
+
 .licensing-heading {
 	width: 20%;
 }
@@ -95,15 +98,6 @@ a {
 	margin-bottom: 5px;
 }
 
-.technical {
-	padding-top: 20px;
-	padding-bottom: 20px;
-	border-bottom: 1px solid #ccc;
-	width: 100%;
-	display: flex;
-
-	justify-content: space-between;
-}
 .technical-heading {
 	width: 20%;
 }
@@ -137,15 +131,6 @@ a {
 
 /* Experience */
 
-.experience {
-	padding-top: 20px;
-	padding-bottom: 35px;
-	border-bottom: 1px solid #ccc;
-	width: 100%;
-	display: flex;
-
-	justify-content: space-between;
-}
 .exp-heading {
 	width: 20%;
 }
@@ -185,15 +170,6 @@ h4 {
 
 /* projects */
 
-.projects {
-	padding-top: 20px;
-	padding-bottom: 35px;
-	border-bottom: 1px solid #ccc;
-	width: 100%;
-	display: flex;
-
-	justify-content: space-between;
-}
 .proj-heading {
 	width: 20%;
 }
@@ -230,7 +206,65 @@ h4 {
 .footer-text {
 	text-align: center;
 }
+
 /* Utility Classes */
 .pt-0 {
 	padding-top: 0;
+}
+
+/* Making responsive */
+
+@media only screen and (max-width: 600px) {
+	body {
+		overflow-x: hidden;
+		width: 100%;
+	}
+	.content {
+		/* width: 100% !important; */
+		overflow-x: hidden;
+
+		margin-top: 0px;
+		/* padding-top: 0px; */
+		padding: 0px;
+		width: 100%;
+	}
+	header {
+		width: 100%;
+	}
+	.contact-detail {
+		display: block !important;
+
+		width: 100%;
+		overflow-x: hidden !important;
+		overflow-y: scroll !important;
+	}
+	/* section {
+		display: block;
+		text-align: center;
+	} */
+	.name {
+		width: 100%;
+	}
+	.name h1 {
+		font-size: 30px;
+		text-align: center;
+	}
+	.contacts {
+		width: 100%;
+	}
+	.contacts h3 {
+		text-align: center;
+	}
+	.name h2 {
+		text-align: center;
+		padding-top: 5px;
+	}
+
+	section h2 {
+		font-size: 20px;
+		margin-left: 5px;
+	}
+	.exp-date {
+		margin-right: 5px;
+	}
 }
